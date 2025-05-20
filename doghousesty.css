@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    scroll-behavior: smooth;
+    background-color: #4e3723;
+    font-family: guyot-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #8bb4cf;
+  }
+  
+  #wrapper {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2em 2em 2em 2em;
+  }
+  
+  #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-bottom: 2px solid #8bb4cf; /* Optional: gives a visual separation */
+  }
+  
+  #nameplate h1 {
+    font-family: guyot-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #8bb4cf;
+    font-size: 2.5em;
+    margin: 0;
+  }
+  #nameplate h2 {
+    font-family: guyot-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #8bb4cf;
+    font-size: 1em;
+    margin: 0;
+  }
+  
+  /* Regular state for #nav */
+  #nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5em; /* Space between nav items */
+  }
+  
+  #nav li a {
+    color: #8bb4cf;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.3em;
+  }
+  
+  #nav li a:hover {
+    color: #da2c38; /* Poppy red */
+  }
+  
+  #current {
+    text-decoration: underline;
+  }
+  
+  #dhmetallic { 
+  width: 40%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  }
+  
+  #comingsoon {
+    font-family: guyot-sans, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 10em;
+    text-align: center;
+  }
+  
+  #footer {
+    border-top: 2px solid #8bb4cf;
+    padding-top: 1em;
+    color: #8bb4cf;
+    /* width: 80%; */
+    margin: 0 auto;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  
+  a:link {
+    text-decoration: none;
+  }
+  a:visited {
+    text-decoration: none;
+  }

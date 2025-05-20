@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Timothy Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicon_io/site.webmanifest" />
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Bootstrap Bundle JS (includes Popper) -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/ejq1fzi.css">
+    <link rel="stylesheet" href="portfolio.css" />
+
+    <!-- three.js -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+        }
+      }
+    </script>
+
+    <!-- my java scripts-->
+    <script type="module" src="portfolio.js"></script>
+
+  </head>
+  <body>
+    <div id="wrapper">
+      <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid px-4">
+          <div id="nameplate">
+            <h1>Timothy Brewer</h1>
+            <h2>Digital Media Artist</h2>
+          </div>
+            <button class="navbar-toggler text-dark border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+              <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+                <ul class="navbar-nav mb-2 mb-lg-0" id="nav-list">
+                  <li class="nav-item"><a class="nav-link custom-link" href="index.html">About</a></li>
+                  <li class="nav-item"><a class="nav-link custom-link" href="projects.html">Projects</a></li>
+                  <li class="nav-item"><a class="nav-link custom-link active" href="doghouse.html" id="current">doghouse</a></li>
+                  <li class="nav-item"><a class="nav-link custom-link" href="resume.html">Resume</a></li>
+                  <li class="nav-item"><a class="nav-link custom-link" href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+        </div>
+      </nav>
+      <div id="dhmetallic">
+        <img src="doghouse/metalic100.gif" autoplay loop muted playsinline style="width: 100%; height: auto;"></img>
+      </div>
+      <div id="comingsoon">Coming Soon...</div>
+      <footer id="footer">
+          <nav id="footer-nav">
+            <ul class="d-flex justify-content-center flex-wrap gap-4 list-unstyled">
+              <li><a href="index.html">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="doghouse.html">doghouse</a></li>
+              <li><a href="resume.html">Resume</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+            <p class="text-center mb-0">&copy; 2024 Timothy Brewer</p>
+        </footer>
+    </div>
+  </body>
+</html>

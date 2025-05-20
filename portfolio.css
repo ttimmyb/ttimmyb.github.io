@@ -1,0 +1,329 @@
+/* Colors: 
+#0077b6 honolulu blue
+#da2c38 poppy red
+#FFE736 yellow
+#FFDF00 golden yellow
+#404040 davys dark grey
+#dddddd light grey
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  background-color: #dddddd;
+  font-family: guyot-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #404040;
+  margin: 0; /* REMOVE DEFAULT MARGIN */
+  min-height: 100vh; /* Ensures body always fills the full viewport */
+  
+}
+
+#wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2em 2em 2em 2em;
+    background-color: #dddddd; /* ADD THIS */
+}
+
+/* Custom Bootstrap Navbar Styling */
+.custom-navbar {
+  border-bottom: 2px solid #404040;
+  background-color: #dddddd;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-nav .nav-link.custom-link {
+  color: #404040;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.3em;
+}
+
+.navbar-nav .nav-link.custom-link:hover {
+  color: #da2c38;
+}
+
+#nav-list .nav-link.active,
+#nav-list .nav-link#current {
+  text-decoration: underline;
+}
+
+.text-large { font-size: 1.8rem; }
+.text-medium { font-size: 1.2rem; }
+.text-small { font-size: 0.9rem; }
+
+#nameplate h1 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
+#nameplate h2 {
+  font-size: clamp(0.9rem, 3vw, 1.2rem);
+}
+
+/* Footer Styles with Nav */
+#footer {
+  border-top: 2px solid #404040;
+  padding: 1.5em 2em 0.5em;
+  margin: 2em auto 0;
+  color: #404040;
+}
+
+#footer-nav a {
+  color: #404040;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+#footer-nav a:hover {
+  color: #da2c38;
+}
+
+ #header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #404040; /* Optional: gives a visual separation */
+}
+
+#nameplate h1 {
+  font-family: guyot-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #404040;
+  font-size: 2.5em;
+  margin: 0;
+}
+#nameplate h2 {
+  font-family: guyot-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #404040;
+  font-size: 1em;
+  margin: 0;
+}
+
+/* Regular state for #nav */
+#nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5em; /* Space between nav items */
+}
+
+#nav li a {
+  color: #404040;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.3em;
+}
+
+#nav li a:hover {
+  color: #da2c38; /* Poppy red */
+}
+
+#current {
+  text-decoration: underline;
+}
+
+#three-container {
+  justify-content: center;
+  width: 100%;
+  height: 500px; /* Adjust height as needed */
+  background-color: #dddddd;
+}
+
+#content1 {
+  display: flex;
+  align-items: flex-start; /* Align tops of image and text */
+  gap: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Allows stacking on small screens */
+}
+
+#abtpic {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #404040;
+  flex-shrink: 0; /* Prevents the image from shrinking */
+  margin-top: 1em;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 250px; /* Adjust as needed for responsiveness */
+}
+
+#howdy {
+  font-size: 2.5em;
+  font-style: italic;
+}
+
+#about1 {
+  font-size: 2em;
+  padding-bottom: 1.5em;
+}
+
+
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+
+/* projects */
+.card-img-top {
+  height: 225px; /* or 255px if preferred */
+  object-fit: cover;
+  object-position: center;
+}
+
+.album {
+  background-color: #dddddd; /* Light grey background */
+}
+
+.card {
+  border: 2px solid #404040;
+  border-radius: 10px;
+  background-color: #eeeeee;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  background-color: #eeeeee;
+  border-top: 2px solid #404040;
+  color: #404040;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  backdrop-filter: blur(10px);
+}
+
+.card-text {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.btn-outline-secondary {
+  color: #0077b6;
+  border-color: #0077b6;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #0077b6;
+  color: #fff;
+  border-color: #0077b6;
+}
+
+.text-muted {
+  font-size: 0.8em;
+  color: #404040 !important;
+}
+
+/* resume */
+#resume-content {
+  font-size: 1.1em;
+  color: #404040;
+}
+
+.section-title {
+  color: #0077b6;
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  border-bottom: 2px solid #404040;
+  padding-bottom: 0.3em;
+}
+
+.scroll-image-stack {
+  height: 500px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  padding: 6px;
+}
+
+.scroll-image-stack img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.scroll-image-stack img:hover {
+  transform: scale(1.02);
+}
+
+.scroll-image-stack {
+  overflow-y: hidden;
+}
+
+.scroll-image-stack:hover {
+  overflow-y: auto;
+}
+
+#resume-content ul {
+  padding-left: 2em;
+}
+
+#resume-content ul li {
+  margin-bottom: 0.4em;
+}
+
+/* Give the icon row a subtle hover colour */
+section a:hover img {
+  filter: brightness(0) saturate(100%) invert(35%) sepia(89%) saturate(504%)
+    hue-rotate(338deg) brightness(97%) contrast(96%);
+}
+
+@media (max-width: 1194px) {
+  #wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1em 1em 1em 1em;
+  }
+
+  #nameplate h1 {
+    font-size: 1em;
+  }
+
+  #nameplate h2 {
+    font-size: 0.7em;
+  }
+
+  #abtpic {
+    display: block;
+    margin: 0 auto 1em auto; /* centers image and adds bottom margin */
+    width: 150px;
+    height: 150px;
+  }
+
+  #content1 {
+    font-size: 0.6em;
+  }
+}
